@@ -36,8 +36,9 @@ function setup() {
 }
 function draw() {
   background("black");
-  textSize(20)
- //text("Score : "+score,20,30);
+  textSize(35)
+  fill("white")
+  text("Score  " + score, width-500, 50)
   Engine.update(engine); 
   for (var i = 0; i < plinkos.length; i++) {
     plinkos[i].display();
